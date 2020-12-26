@@ -97,7 +97,7 @@
  delY=1*925.,
 # delY=5.E3,
 # delX=4972*463.,
- delX=2486*925.,
+ delX=2484*925.,
 # delX=4972*218.,
 # xgOrigin=-140.,
 # ygOrigin=69.6,
@@ -123,7 +123,7 @@
 # hydrogSaltFile='Salt.ini',
  bathyFile='bathConst3000F.ini',
 # bathyFile='bathReal.ini',
- zonalWindFile='Taux-Storm24.bin',
- meridWindFile='Tauy-Storm24.bin',
+ zonalWindFile='Taux-Storm3.bin',
+ meridWindFile='Tauy-Storm3.bin',
 
  &
