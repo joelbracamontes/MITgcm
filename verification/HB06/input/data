@@ -84,7 +84,7 @@
  monitorFreq=1800.,
  monitorSelect=2,
  periodicExternalForcing=.TRUE.,
- externForcingPeriod=75.,
+ externForcingPeriod=150.,
  externForcingCycle=604800.,
  &
 
