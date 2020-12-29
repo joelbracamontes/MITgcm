@@ -1,0 +1,25 @@
+#!/bin/bash
+#SBATCH -J Joelexe1
+##SBATCH -p mpp
+#SBATCH -n 36
+#SBATCH -t 01:00:00 
+#SBATCH -o ./output.txt
+# list of hosts that you are running on
+hostlist=$(scontrol show hostnames | tr '\n' ',' | rev | cut -c 2- | rev)
+echo "hosts: $hostlist" umask 022
+#
+# load your modules with "module load ..."
+#
+# maximum possible stacksize
+ulimit -s unlimited
+# [no longer] very important if you want to run on more than one node!!!
+# export I_MPI_FABRICS=shm:tmi
+# even though we do not run an OpenMP code it is still a good idea to always set this
+export OMP_NUM_THREADS=1
+cd ${SLURM_SUBMIT_DIR}
+# srun --mpi=pmi2 -n ${SLURM_NTASKS} ./mitgcmuv
+# srun ./mitgcmuv
+# Sometimes it may be important to bind MPI processes (ranks) to individual cores on the node
+# see Natalja's post on Binding of MPI tasks for more details
+srun --cpu_bind=cores ./mitgcmuv
+
