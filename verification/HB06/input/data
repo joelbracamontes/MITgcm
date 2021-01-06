@@ -4,26 +4,20 @@
 #
 # Continuous equation parameters
  &PARM01
- tRefFile='Tref3f0.ini',
-
+ tRefFile='The1.ini',
  sRef=120*30.,
  viscAz=1.E-6,
-# viscAz=5000.,
-# viscA4Grid=1.E-1,
-# viscA4=1.E-3,
- viscAhGrid=1.E-2,
-# viscAhGrid=1.0,
-# viscAhGrid=1.,
- no_slip_sides=.FALSE.,
- no_slip_bottom=.FALSE.,
+# viscAhGrid=1.E-2,
+ viscAh=1.E-2,
  diffKhT=1.E-3,
  diffKzT=1.E-6,
-# diffKzT=1.E-3,
-# diffK4T=0.E-3
 
-# rhoConst=1027.0,
+ rhoConst=1000.0,
+ rhonil=1000.0,
 
- f0=1.4E-4,
+ no_slip_sides=.FALSE.,
+ no_slip_bottom=.FALSE.,
+ f0=1.4323E-4,
  beta=0.E-11,
  eosType='LINEAR',
  tAlpha=2.E-4,
@@ -37,15 +31,10 @@
 # exactConserv=.TRUE.,
  exactConserv=.FALSE.,
  nonHydrostatic=.FALSE.,
-# hFacMin=0.2,
  implicSurfPress=0.5,
  implicDiv2DFlow=0.5,
-# nonlinFreeSurf=4,
-# hFacInf=0.2,
  tempAdvScheme=33,
  staggerTimeStep=.TRUE.,
-# select_rStar=2,
-# hFacSup=1.8,
  tempStepping=.TRUE.,
  saltStepping=.FALSE.,
  no_slip_sides=.FALSE.,
@@ -74,12 +63,9 @@
  &PARM03
 # pickupStrictlyMatch=.FALSE.,
  nIter0=0,
- endTime=604800.,
-# endTime=86400,
-# endtime look for in seconds
-# deltaT=3.,
+# endTime=604800.,
+ endTime=86400.,
  deltaT=30.,
-# deltaT=120.,
  abEps=0.1,
  pChkptFreq=0.,
  chkptFreq=0.,
@@ -96,27 +82,13 @@
  usingCartesianGrid=.TRUE.,
 # usingSphericalPolarGrid=.TRUE.,
 # use cartesian grid
-# delY=1*463.,
- delY=1*925.,
-# delY=5.E3,
-# delX=4972*463.,
- delX=2484*925.,
-# delX=4972*218.,
+ delY=1*893.7198.,
+ delX=2484*893.7198,
 # xgOrigin=-140.,
 # ygOrigin=69.6,
 #  delZ=84*50.,
   delZ=120*25.,
-# delZ=10.,10.,10.,20.,25.,25.,25.,25.,50.,50.,50.,50.,50.,50.,100.,100.,100.,100.,100.,
-#       100.,100.,100.,100.,100.,100.,100.,100.,100.,100.,100.,100.,100.,100.,150.,150.,
-#       150.,150.,150.,150.,150.,200.,200.,200.,200.,
-# delR=10.,10.,10.,20.,25.,25.,25.,25.,50.,50.,50.,100.,100.,100.,100.,100.,100.,100.,100.,100.,100.,
-#      100.,100.,250.,250.,500.,500.,500.,500.,500.,
-# for z at least 200m try with 80 layers 
-# try with 1km
 #
-# delXfile='delXvar',
-# delY=5.E3,
-# delZ=20*10.,
  &
 
 # Input datasets
