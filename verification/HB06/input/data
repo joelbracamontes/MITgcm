@@ -82,7 +82,7 @@
  usingCartesianGrid=.TRUE.,
 # usingSphericalPolarGrid=.TRUE.,
 # use cartesian grid
- delY=1*893.7198.,
+ delY=1*893.7198,
  delX=2484*893.7198,
 # xgOrigin=-140.,
 # ygOrigin=69.6,
