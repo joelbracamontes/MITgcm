@@ -1,8 +1,8 @@
 # Open-boundaries
  &OBCS_PARM01
  OB_Ieast=-1,
- OB_Iwest=1,
- useOrlanskiEast=.TRUE.,
+# OB_Iwest=1,
+ useOrlanskiEast=.FALSE.,
  useOrlanskiWest=.TRUE.,
  useOBCSbalance=.FALSE.,
  OBCS_monitorFreq=3600.,
@@ -11,5 +11,5 @@
 # Orlanski parameters
  &OBCS_PARM02
  Cmax=0.45,
- cVelTimeScale=44880.,
+ cVelTimeScale=1000.,
  &

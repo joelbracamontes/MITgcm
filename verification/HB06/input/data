@@ -17,7 +17,7 @@
  no_slip_sides=.FALSE.,
  no_slip_bottom=.FALSE.,
  diffKhT=1.E-3,
- diffKzT=0.E-7,
+ diffKzT=1.E-6,
 # diffKzT=1.E-3,
 # diffK4T=0.E-3
 
@@ -45,9 +45,12 @@
  tempAdvScheme=33,
  staggerTimeStep=.TRUE.,
 # select_rStar=2,
- hFacSup=1.8,
+# hFacSup=1.8,
  tempStepping=.TRUE.,
  saltStepping=.FALSE.,
+ no_slip_sides=.FALSE.,
+ no_slip_bottom=.FALSE.,
+
 
 #- not safe to use globalFiles in multi-processors runs
 #globalFiles=.TRUE.,
@@ -121,7 +124,8 @@
 # hydrogThetaFile='Temp.ini',
 # hydrogThetaFile='TempD2.ini',
 # hydrogSaltFile='Salt.ini',
- bathyFile='bathConst3000F.ini',
+ bathyFile='bath0C3000.ini',
+# bathyFile='bathConst3000F.ini',
 # bathyFile='bathReal.ini',
  zonalWindFile='Taux-Storm3.bin',
  meridWindFile='Tauy-Storm3.bin',
