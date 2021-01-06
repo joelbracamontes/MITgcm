@@ -1,6 +1,6 @@
 # Packages
  &PACKAGES
  useOBCS=.TRUE.,
- useMNC=.TRUE.,
+ useMNC=.FALSE.,
  useDiagnostics=.TRUE.,
  &
