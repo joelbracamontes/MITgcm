@@ -3,4 +3,5 @@
  useOBCS=.TRUE.,
  useMNC=.FALSE.,
  useDiagnostics=.TRUE.,
+ useKL10=.TRUE.,
  &

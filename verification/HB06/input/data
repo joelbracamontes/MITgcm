@@ -15,8 +15,6 @@
  rhoConst=1000.0,
  rhonil=1000.0,
 
- no_slip_sides=.FALSE.,
- no_slip_bottom=.FALSE.,
  f0=1.4323E-4,
  beta=0.E-11,
  eosType='LINEAR',
@@ -28,8 +26,7 @@
  momadvection=.FALSE.,
  implicitFreeSurface=.TRUE.,
 # implicitFreeSurface=.FALSE.,
-# exactConserv=.TRUE.,
- exactConserv=.FALSE.,
+ exactConserv=.TRUE.,
  nonHydrostatic=.FALSE.,
  implicSurfPress=0.5,
  implicDiv2DFlow=0.5,
@@ -39,6 +36,9 @@
  saltStepping=.FALSE.,
  no_slip_sides=.FALSE.,
  no_slip_bottom=.FALSE.,
+ nonHydrostatic=.FALSE.,
+ implicitDiffusion=.TRUE.
+ implicitViscosity=.TRUE.
 
 
 #- not safe to use globalFiles in multi-processors runs
@@ -82,8 +82,8 @@
  usingCartesianGrid=.TRUE.,
 # usingSphericalPolarGrid=.TRUE.,
 # use cartesian grid
- delY=1*893.7198,
- delX=2484*893.7198,
+ delY=1*220.3693,
+ delX=5040*220.3693,
 # xgOrigin=-140.,
 # ygOrigin=69.6,
 #  delZ=84*50.,
@@ -99,7 +99,7 @@
  bathyFile='bath0C3000.ini',
 # bathyFile='bathConst3000F.ini',
 # bathyFile='bathReal.ini',
- zonalWindFile='Taux-Storm3.bin',
- meridWindFile='Tauy-Storm3.bin',
+ zonalWindFile='TauxE.ini',
+ meridWindFile='TauyE.ini',
 
  &

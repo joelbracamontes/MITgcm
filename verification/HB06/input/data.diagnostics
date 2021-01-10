@@ -24,6 +24,7 @@
   timePhase(1) = 1800.,
   fields(1:5,2)  = 'THETA   ','PHIHYD  ',
                    'UVEL    ','VVEL    ','WVEL    ',
+                   'KLviscAr','KLdiffKr','KLeps   ',
 # did not specify levels => all levels are selected
    fileName(2) = 'dynDiag',
   frequency(2) = -1800.,
